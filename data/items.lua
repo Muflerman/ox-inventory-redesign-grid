@@ -449,13 +449,21 @@ return {
 	
 	-- Backpacks
 	["backpack"] = {
-        label = "Backpack",
-        description = "A backpack with a capacity of 5 slots.",
-        weight = 2000.0,
-        degrade = nil,
-        rarity = 'legendary',
-        container = { slots = 15, maxWeight = 7000 },
-    },
+		label = "Backpack",
+		description = "A backpack with a capacity of 5 slots.",
+		weight = 2000.0,
+		degrade = nil,
+		rarity = 'legendary',
+		container = { slots = 15, maxWeight = 7000 },
+		client = {
+			prop = {
+				model = 'p_michael_backpack_s',
+				pos = vec3(0.08, -0.18, -0.05),
+				rot = vec3(0.0, 90.0, 180.0),
+				bone = 24818
+			}
+		}
+	},
 
     ["large_backpack"] = {
         label = "Large Backpack",
